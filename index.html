@@ -1,12 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="img/icon/icofont/icofont.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:wght@400&display=swap"
+        rel="stylesheet">
     <title>Fabevy</title>
 </head>
+
 <body>
-    
+    <div class="fab_main_container">
+        <div class="fab_side_bar_section">
+            <div class="fab_container_heading_section">
+                <a href="#"><img src="img/fabevy-logo-landscape.png" alt="logo"></a>
+            </div>
+            <div class="fab_side_bar_split_section">
+                <div class="fab_split1">
+                    <ul>
+                        <li><a href="#"><i class="icofont-ui-search"></i></a></li>
+                        <li><a href="#"><i class="icofont-inbox"></i></a></li>
+                        <li><a href="#"><i class="icofont-ui-folder"></i></a></li>
+                        <li><a href="#"><i class="icofont-share"></i></a></li>
+                        <li><a href="#"><i class="icofont-settings-alt"></i></a></li>
+                    </ul>
+                </div>
+                <div class="fab_split2">
+                    <ul>
+                        <li class="active"><a href="#"><i class="icofont-dashboard "></i>Dashboard</a></li>
+                        <li><a href="#"><i class="icofont-lawyer"></i>QA</a></li>
+                        <li><a href="#"><i class="icofont-business-man"></i>Trainers</a></li>
+                        <li><a href="#"><i class="icofont-architecture-alt"></i>coordinator</a></li>
+                        <li><a href="#"><i class="icofont-woman-in-glasses"></i>HR</a></li>
+                        <li><a href="#"><i class="icofont-read-book-alt"></i>Courses</a></li>
+                        <li><a href="#"><i class="icofont-group-students"></i>Students</a></li>
+                        <li><a href="#"><i class="icofont-ui-folder"></i>FileManager</a></li>
+                        <li><a href="#"><i class="icofont-chat"></i>Chat</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="fab_console_conntainer">
+            <div class="fab_main_container_right">
+                <div class="fab_right_header">
+                    <div class="fab_search">
+                        <input type="text" placeholder="What You Want To Find">
+                        <a href="#">Search</a>
+                    </div>
+                    <div class="fab_link">
+                        <div class="fab_user">
+                            <div class="fab_image_section">
+                                <img src="img/4x4.jpg" alt="User_Image">
+                            </div>
+                            <h5>Name</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Dashboard section starts -->
+                <div class="fab_dashboard_section">
+                    <div class="Section_heading">
+                        <h2>Dashboard</h2>
+                        <p>ERICSSON / UNIVERSITY / DASHBOARD</p>
+                    </div>
+                    <div class="dashboard_card_section">
+
+                        <div class="container_box">
+                            <div class="card_box">
+                                <div class="imgBx">
+                                    <i class="icofont-location-pin"></i>
+                                </div>
+                                <div class="contentBx">
+                                    <h2>Address</h2>
+                                    <div class="size">
+                                        <h3>No.20 , First Floor,
+                                            Monticello Apartment,
+                                            Kamarajar Salai,
+                                            KK Nagar, Chennai - 600083
+                                            Land Mark: Opposite to St Mathias Church</h3>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fab_card_box">
+                            <!-- <div class="fab_color_round"></div> -->
+                            <div class="icon_section"><i class="icofont-lawyer"></i></div>
+                            <div class="text_section">
+                                <h5>QA</h5>
+                            </div>
+                        </div>
+                        <div class="fab_card_box">
+                            <div class="icon_section"><i class="icofont-architecture-alt"></i></div>
+                            <div class="text_section">
+                                <h5>coordinator</h5>
+                            </div>
+                        </div>
+                        <div class="fab_card_box">
+                            <div class="icon_section"><i class="icofont-woman-in-glasses"></i></div>
+                            <div class="text_section">
+                                <h5>HR</h5>
+                            </div>
+                        </div>
+                        <div class="fab_card_box">
+                            <div class="icon_section"><i class="icofont-read-book-alt"></i></div>
+                            <div class="text_section">
+                                <h5>Courses</h5>
+                            </div>
+                        </div>
+                        <div class="fab_card_box">
+                            <div class="icon_section"><i class="icofont-group-students"></i></div>
+                            <div class="text_section">
+                                <h5>Students</h5>
+                            </div>
+                        </div>
+                        <div class="fab_card_box">
+                            <div class="icon_section"><i class="icofont-ui-folder"></i></div>
+                            <div class="text_section">
+                                <h5>FileManager</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TABLE STARTS -->
+                    <div class="fab_task_list">
+                        <h2>QA Board</h2>
+                        <div class="fab_task_box">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Batch Ids</th>
+                                        <th>Tasks</th>
+                                        <th>Date</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>FSD 01</td>
+                                        <td>Task Name</td>
+                                        <td>
+                                            <input type="date">
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option value="1">Work in Progress</option>
+                                                <option value="2">Not done</option>
+                                                <option value="3">Finish</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>FSD 02</td>
+                                        <td>Task Name</td>
+                                        <td><input type="date">
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option value="1">Work in Progress</option>
+                                                <option value="2">Not done</option>
+                                                <option value="3">Finish</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>FSD 03</td>
+                                        <td>Task Name</td>
+                                        <td><input type="date">
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option value="1">Work in Progress</option>
+                                                <option value="2">Not done</option>
+                                                <option value="3">Finish</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>FSD 04</td>
+                                        <td>Task Name</td>
+                                        <td><input type="date">
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option value="1">Work in Progress</option>
+                                                <option value="2">Not done</option>
+                                                <option value="3">Finish</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>FSD 05</td>
+                                        <td>Task Name</td>
+                                        <td><input type="date">
+                                        </td>
+                                        <td>
+                                            <select>
+                                                <option value="1">Work in Progress</option>
+                                                <option value="2">Not done</option>
+                                                <option value="3">Finish</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- TABLE END -->
+
+                    
+
+
+
+                    
+                </div>
+
+                <!-- Dashboard section end -->
+            </div>
+
+        </div>
+    </div>
+
 </body>
+
 </html>

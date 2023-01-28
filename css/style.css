@@ -1,0 +1,452 @@
+body {
+    --line-color: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 0%, rgba(196, 196, 196, 1) 54%, rgba(255, 255, 255, 0) 100%);
+    --background-color: #f7f7f7;
+    --side-bar-color: linear-gradient(to bottom, #a044ff, #6a3093);
+    --white-color: white;
+    --button-hover: #ffffff45;
+    --perple-color: #660099;
+    --card-color: #232323;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+
+}
+
+.active {
+    transition: 0.2s;
+    border-radius: 6px;
+    background-color: var(--button-hover);
+    border-right: 4px solid var(--perple-color);
+}
+
+/* SIDE BAR SECTION STARTS */
+/* fab_split 1 */
+.fab_main_container {
+    display: flex;
+}
+
+.fab_side_bar_section {
+    width: 20%;
+
+    background: var(--side-bar-color);
+}
+
+.fab_side_bar_section .fab_container_heading_section img {
+    margin: 6px;
+    width: 180px;
+}
+
+.fab_side_bar_split_section {
+    display: flex;
+}
+
+.fab_side_bar_split_section .fab_split1 {
+    width: 20%;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+
+.fab_side_bar_split_section .fab_split1 ul {
+    margin: 16px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.fab_side_bar_split_section .fab_split1 li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--white-color);
+    transition: 0.5s;
+
+}
+
+.fab_side_bar_split_section .fab_split1 li a:hover {
+
+    transition: 0.5s;
+    color: black;
+}
+
+
+.fab_side_bar_split_section .fab_split2 {
+    width: 100%;
+    /* height: 100vh; */
+
+}
+
+/* SIDE BAR SECTION END */
+
+/* RIGHT SIDE STARTS */
+.fab_console_conntainer {
+    width: 80%;
+    /* height: 100vh; */
+    background-color: var(--background-color);
+}
+
+
+/* fab_split 2 */
+
+.fab_split2 ul {
+    list-style: none;
+    margin: 4px 16px;
+
+}
+
+.fab_split2 ul li {
+    padding: 8px 6px;
+    margin: 4px 0px;
+
+}
+
+.fab_split2 a {
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--white-color);
+
+}
+
+.fab_split2 li:hover {
+    transition: 0.2s;
+    border-radius: 6px;
+    background-color: var(--button-hover);
+}
+
+.fab_split2 a i {
+    padding-right: 8px;
+
+}
+
+.fab_right_header {
+    padding-bottom: 16px;
+    display: flex;
+    margin: 16px;
+    justify-content: space-between;
+    border-bottom: 1px solid #a044ff;
+}
+
+.fab_search input {
+    padding: 6px;
+    border-radius: 6px;
+    height: 30px;
+    width: 50%;
+    border: none;
+    outline: none;
+}
+
+.fab_search {
+    width: 70%;
+}
+
+.fab_link {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.fab_user h5 {
+    font-size: 20px;
+}
+
+.fab_search a {
+    font-weight: bold;
+    margin-left: 6px;
+    border-radius: 6px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--perple-color);
+}
+
+.fab_image_section {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 6px;
+}
+
+.fab_image_section img {
+    width: 40px;
+    height: 40px;
+}
+
+.fab_user {
+    display: flex;
+    align-items: center;
+}
+
+/* DASHBOARD SECTON STARTS */
+.Section_heading h2 {
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+
+.Section_heading p {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.fab_dashboard_section {
+
+    width: 95%;
+    margin: 0 auto;
+}
+
+.dashboard_card_section {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* CARD SECTION STARTS */
+
+
+
+/* ------------------------- */
+
+.fab_card_box {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 6px;
+    width: 150px;
+    height: 150px;
+    color: var(--white-color);
+    background-color: var(--card-color);
+    box-shadow: 1px 1px 7px 6px #d3d3d3;
+}
+
+
+.fab_card_box i {
+    font-size: 30px;
+}
+
+.fab_card_box h5 {
+    font-weight: 200;
+    font-size: 30px;
+}
+
+/* --------CARD ANIMATIN SECTION STARTS */
+.container_box {
+    position: relative;
+}
+
+
+.container_box .card_box {
+    position: relative;
+    width: 180px;
+    height: 150px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.container_box .card_box:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: var(--perple-color);
+    clip-path: circle(95px at 80% 20%);
+    transition: 0.5s ease-in-out;
+  }
+  
+.container_box .card_box:hover:before {
+    clip-path: circle(170px at 80% -20%);
+  }
+  
+  .container_box .card_box:after {
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 25, 0.05)
+  }
+  
+  .container_box .card_box .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+  }
+  
+  .container_box .card_box:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+  
+  }
+  
+  .container_box .card_box .imgBx i {
+    color: var(--white-color);
+    font-size: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* width: 270px; */
+  }
+  
+  .container_box .card_box .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+  }
+  
+  .container_box .card_box:hover .contentBx {
+    height: 210px;
+  }
+  
+  .container_box .card_box .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    margin: 15px 0px;
+    font-size: 32px;
+  }
+  
+  .container_box .card_box .contentBx .size,
+  .container .card .contentBx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  
+  .container_box .card_box:hover .contentBx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+  }
+  
+  .container_box .card_box:hover .contentBx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+  }
+  
+  .container_box .card_box .contentBx .size h3,
+  .container .card .contentBx .color h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+    text-align: start;
+  }
+  
+  .container_box .card_box .contentBx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .container_box .card_box .contentBx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+    margin-top: 0;
+  }
+  
+  .container_box .card_box:hover .contentBx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+  
+  }
+/* --------CARD ANIMATIN SECTION END */
+/* CARD SECTION END */
+
+/* TASK TABLE STARTS */
+.fab_task_list h2 {
+    font-size: 24px;
+    padding: 16px;
+
+}
+
+.fab_task_list {
+    border-radius: 6px;
+    margin-top: 64px;
+    background-color: var(--white-color);
+    box-shadow: 1px 1px 7px 6px #d3d3d3;
+
+}
+
+.fab_task_box {
+    margin: 16px;
+    text-align: start;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 32px;
+
+}
+
+table th {
+    padding: 16px 6px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+table td {
+    font-size: 20px;
+    padding: 16px 6px;
+}
+
+table input {
+    font-size: 16px;
+    border: none;
+}
+
+select {
+    outline: none;
+    border: none;
+}
+
+
+
+/* TASK TABLE END */
+
+/* DASHBOARD SECTON END */
+
+/* RIGHT SIDE END */
